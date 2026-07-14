@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nam Hoàng | Video Editor Portfolio</title>
+<meta name="description" content="Nam Hoàng — video editor chuyên GEOlayers, motion graphics và dựng phim tài liệu." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header" id="top">
+  <a class="logo" href="#top">
+    <span class="logo-mark">NH</span>
+    <span class="logo-text">Nam Hoàng</span>
+  </a>
+  <nav class="nav">
+    <a href="#work">Dự án</a>
+    <a href="#about">Giới thiệu</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+  <a class="nav-cta" href="#contact">Bắt đầu dự án</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#work">Dự án</a>
+  <a href="#about">Giới thiệu</a>
+  <a href="#contact">Liên hệ</a>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Video Editor — GEOlayers · Motion Graphics</p>
+      <h1 class="hero-title">
+        <span class="line">Map.</span>
+        <span class="line accent">Move.</span>
+        <span class="line">Explain.</span>
+      </h1>
+      <p class="hero-sub">
+        Dựng video tài liệu bằng ngôn ngữ của bản đồ và chuyển động — nơi mỗi cú pan,
+        mỗi lớp GEOlayers đều phục vụ cho một câu chuyện dễ hiểu, đúng nhịp, đúng cảm xúc.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Bắt đầu dự án</a>
+        <a class="btn btn-ghost" href="#work">Xem video <span class="arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <canvas id="globeCanvas"></canvas>
+      <p class="coord-tag">MOTION · GEO · DATA</p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="eyebrow">Dự án</p>
+      <h2>Video đã thực hiện</h2>
+    </div>
+
+    <div class="work-grid">
+
+      <a class="work-card" href="projects/documentary.html">
+        <div class="thumb">
+          <img src="https://img.youtube.com/vi/7155ccl2o2c/hqdefault.jpg" alt="Video dự án 1" loading="lazy" />
+          <span class="play">▶</span>
+        </div>
+        <p class="tag">Documentary</p>
+        <!-- TODO: thay tiêu đề thật của video -->
+        <h3>Hành trình khám phá qua bản đồ</h3>
+        <p class="desc">Dựng chuyển động bản đồ và nhịp phim để dẫn dắt người xem qua từng giai đoạn của câu chuyện, giữ nhịp nhanh và dễ theo dõi.</p>
+        <div class="chips"><span>GEOlayers</span><span>Map Animation</span></div>
+      </a>
+
+      <a class="work-card" href="projects/geopolitics.html">
+        <div class="thumb">
+          <img src="https://img.youtube.com/vi/08Yq8hzsUkc/hqdefault.jpg" alt="Video dự án 2" loading="lazy" />
+          <span class="play">▶</span>
+        </div>
+        <p class="tag">Geopolitics</p>
+        <!-- TODO: thay tiêu đề thật của video -->
+        <h3>Câu chuyện địa chính trị qua hình ảnh</h3>
+        <p class="desc">Chuyển hoá dữ liệu và bối cảnh phức tạp thành hình ảnh trực quan, giúp khán giả nắm bắt vấn đề chỉ trong vài giây.</p>
+        <div class="chips"><span>Motion Design</span><span>Data Animation</span></div>
+      </a>
+
+      <a class="work-card" href="projects/infrastructure.html">
+        <div class="thumb">
+          <img src="https://img.youtube.com/vi/BbW5HUspGjY/hqdefault.jpg" alt="Video dự án 3" loading="lazy" />
+          <span class="play">▶</span>
+        </div>
+        <p class="tag">Infrastructure</p>
+        <!-- TODO: thay tiêu đề thật của video -->
+        <h3>Giải mã dự án hạ tầng quy mô lớn</h3>
+        <p class="desc">Xây dựng các cảnh giải thích rõ ràng, được đánh giá cao về độ chính xác hình ảnh và nhịp kể chuyện.</p>
+        <div class="chips"><span>GEOlayers</span><span>Motion Design</span></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-photo">
+      <div class="photo-frame">NH</div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">Giới thiệu</p>
+      <h2>Tôi dựng những câu chuyện giải thích thế giới.</h2>
+      <p>
+        Tôi là Nam Hoàng, video editor với hơn 4 năm kinh nghiệm trong dựng phim tài liệu,
+        GEOlayers, animation và motion graphics. Với tôi, dựng phim là cách để kể lại thế giới
+        theo góc nhìn riêng — biến dữ liệu, bản đồ và những thông tin phức tạp thành hình ảnh
+        chuyển động mạch lạc, giúp người xem hiểu và cảm nhận câu chuyện chỉ trong vài giây.
+      </p>
+      <div class="chips">
+        <span>GEOlayers</span><span>Motion Graphics</span><span>Animation</span><span>Data Visualization</span>
+      </div>
+      <p class="available"><span class="dot"></span> Đang nhận dự án mới</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Cùng kể câu chuyện<br />tiếp theo của bạn.</h2>
+    <a class="btn btn-primary btn-lg"
+       href="mailto:nam68794@gmail.com?subject=Bắt%20đầu%20một%20dự%20án&body=Chào%20Nam%2C%0A%0AMình%20xem%20portfolio%20của%20bạn%20và%20muốn%20liên%20hệ.%0A%0AMình%20muốn%20trao%20đổi%20về%20một%20dự%20án.%0A%0AHẹn%20sớm%20nhận%20được%20phản%20hồi%20từ%20bạn%21">
+      Bắt đầu dự án
+    </a>
+    <p class="or">hoặc gửi email trực tiếp tới <a href="mailto:nam68794@gmail.com">nam68794@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Nam Hoàng Editor</p>
+  <div class="footer-links">
+    <a href="mailto:nam68794@gmail.com">nam68794@gmail.com</a>
+    <a href="#top">Về đầu trang</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="globe.js"></script>
+</body>
+</html>
